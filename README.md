@@ -1,4 +1,4 @@
-# Liquidio - Low-Latency DeFi Liquidation Bot
+# Liquidio
 
 A high-performance, Rust-based liquidation bot demonstrating <10ms end-to-end latency for DeFi 
 liquidation opportunities. Built as a proof-of-concept showcasing optimal architecture for MEV 
