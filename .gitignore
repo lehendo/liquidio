@@ -45,3 +45,4 @@ benchmark_results/*.csv
 node_modules/
 
 
+foundry.lock

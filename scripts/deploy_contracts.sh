@@ -62,6 +62,7 @@ echo "Deploying contracts..."
 echo "   Deploying MockERC20 (Stablecoin)..."
 STABLECOIN_OUTPUT=$(forge create --rpc-url http://127.0.0.1:8545 \
     --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 \
+    --broadcast \
     contracts/MockERC20.sol:MockERC20 \
     --constructor-args "USD Stablecoin" "USDC" "1000000000000000000000000")
 
@@ -72,6 +73,7 @@ echo "   [OK] Stablecoin deployed at: $STABLECOIN_ADDRESS"
 echo "   Deploying SimpleLendingProtocol..."
 PROTOCOL_OUTPUT=$(forge create --rpc-url http://127.0.0.1:8545 \
     --private-key 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80 \
+    --broadcast \
     contracts/SimpleLendingProtocol.sol:SimpleLendingProtocol \
     --constructor-args "$STABLECOIN_ADDRESS")
 
