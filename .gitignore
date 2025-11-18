@@ -23,6 +23,7 @@ artifacts/
 # IDE
 .vscode/
 .idea/
+.cursorignore
 *.swp
 *.swo
 *~
