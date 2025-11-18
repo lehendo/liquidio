@@ -1,0 +1,11 @@
+# Cursor ignore - prevent indexing sensitive files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+private_keys/
+wallets/
+
+
