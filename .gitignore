@@ -46,3 +46,7 @@ node_modules/
 
 
 foundry.lock
+
+# Foundry dependencies
+lib/
+foundry.lock
